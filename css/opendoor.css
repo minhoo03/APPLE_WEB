@@ -1,0 +1,101 @@
+.fix_box2 {
+    width: 100%;
+    height: 3000px;
+}
+.sticky_box2 {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    height: 100vh;
+}
+
+.por_box {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.left_box,
+.right_box {
+    position: absolute;
+    background: #000;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    z-index: 20;
+}
+
+.left_box {
+    left: 0;
+}
+.right_box {
+    right: 0;
+}
+
+.intro_txt {
+    position: absolute;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+    opacity: 1;
+    z-index: 30;
+    font-size: 140px;
+}
+
+.intro_txt.active {
+    opacity: 0;
+}
+
+.bg_img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/stevejobs.jpg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.end_txt {
+    transition: 1s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 15;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    color: #000;
+    opacity: 0;
+}
+.end_txt.active {
+    opacity: 1;
+}
+
+.end_txt h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.end {
+    position: relative;
+    background: #111;
+    height: 100%;
+    height: 50vh;
+}
+.end h2 {
+    color: #fff;
+    font-size: 64px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
