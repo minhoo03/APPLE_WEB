@@ -92,6 +92,14 @@ a {
     overflow: hidden;
 }
 
+.innerp8 {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
 /* -webkit-filter: blur(1px); */
 
 .site_nav {
