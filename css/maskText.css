@@ -7,6 +7,7 @@
     height: 800px;
     background: #111;
     box-sizing: border-box;
+    mix-blend-mode: screen;
 }
 
 .wrap {
@@ -29,6 +30,7 @@
 }
 
 .txt {
+    mix-blend-mode: difference;
     position: relative;
     font-size: 48px;
     padding: 4px;
