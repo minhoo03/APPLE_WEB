@@ -54,12 +54,25 @@ $(() => {
 
         console.log('zoomVal',zoomVal)
 
-        move_img1.css({
-            'transform': `translateY(${moveVal1}px)`
-        })
-        move_img2.css({
-            'transform': `translate(0px,${moveVal2}px)`
-        })
+        if (window.matchMedia("(max-width: 1200px)").matches) {
+            /* 뷰포트 너비가 400 픽셀 이상 */
+            move_img2.css({
+                'transform': `translateY(0px)`
+            })
+            move_img1.css({
+                'transform': `translateY(0px)`
+            })
+          } else {
+            move_img2.css({
+                'transform': `translate(0px,${moveVal2}px)`
+            })
+            move_img1.css({
+                'transform': `translateY(${moveVal1}px)`
+            })
+        }
+
+
+
 
         apple_intro.css({
             'transform': `scale(${zoomVal})`

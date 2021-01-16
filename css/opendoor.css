@@ -99,3 +99,21 @@
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    .intro_txt {
+        font-size: 90px;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+    .intro_txt {
+        font-size: 60px;
+    }
+}
+
+@media all and (max-width: 479px) {
+    .intro_txt {
+        font-size: 30px;
+    }
+}
