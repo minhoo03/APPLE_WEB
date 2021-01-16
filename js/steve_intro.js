@@ -55,7 +55,7 @@ $(() => {
         console.log('zoomVal',zoomVal)
 
         move_img1.css({
-            'transform': `translate(0px,${moveVal1}px)`
+            'transform': `translateY(${moveVal1}px)`
         })
         move_img2.css({
             'transform': `translate(0px,${moveVal2}px)`
