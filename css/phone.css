@@ -1,0 +1,22 @@
+.site_phone {
+    width: 100%;
+    height: 3000px;
+    display: flex;
+}
+
+.site_phone h2 {
+    font-size: 100px;
+}
+
+.phone_sticky {
+    width: 50%;
+    background: #000;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.phone_title {
+    padding-top: 409px;
+    color: #ffffff;
+}
