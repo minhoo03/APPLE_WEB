@@ -2,6 +2,7 @@ $(function(){
 
     var scrollBody = $('.fix_motion'); //부모 스크롤 엘리먼트
 
+    // 기본
     var scrollHeight; // 스크롤 높이
     var sectionOffsetTop; //섹션의 오프셋 탑 변수
     var sectionScrolTop; //섹션의 스크롤 탑 변수
@@ -10,10 +11,12 @@ $(function(){
     var scrollPerecnt; // 스크롤위치 / 스크롤 길이로 구한 비율 값
     var percent; // 스크롤 백분율값을 담을 변수를 선업합니다
 
+    // 반응형
     var windowWdith = $(window).width(); // 화면의 넓이값
     var mobileSize = 1024; //모바일로 변환된 사이즈 설정 (기기명으로 모바일버전을 체크하는게 아니라 스크린 사이즈가 1024보다 작을경우 모바일로 간주함)
     var isMobile; //화면사이즈가 모바일인지 체크하는 변수
 
+    // 캔버스
     var el = document.querySelector('.canvas_wrap'); //캔버스를 담을 요소
     var canvas = document.createElement('canvas'); // 캔버스 생성
     var ctx = canvas.getContext('2d'); //렌더링 컨텍스트 타입을 2d로 선언
