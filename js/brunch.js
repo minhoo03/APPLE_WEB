@@ -45,7 +45,7 @@
         }
     }
 
-    function showValue3() {
+    function showValue4() {
         let y = site_macbook.getBoundingClientRect().top
 
         if(y < window.innerHeight * 0.65) {
@@ -55,7 +55,7 @@
         }
     }
 
-    function showValue4() {
+    function showValue5() {
         let y = phone_text1.getBoundingClientRect().top
 
         if(y < window.innerHeight * 0.65) {
@@ -65,7 +65,7 @@
         }
     }
 
-    function showValue5() {
+    function showValue6() {
         let y = phone_text2.getBoundingClientRect().top
 
         if(y < window.innerHeight * 0.65) {
@@ -75,7 +75,7 @@
         }
     }
 
-    function showValue6() {
+    function showValue7() {
         let y = phone_text3.getBoundingClientRect().top
 
         if(y < window.innerHeight * 0.65) {
@@ -92,6 +92,7 @@
     window.addEventListener('scroll', showValue4, false)
     window.addEventListener('scroll', showValue5, false)
     window.addEventListener('scroll', showValue6, false)
+    window.addEventListener('scroll', showValue7, false)
 
     window.addEventListener('scroll', () => {
         scrollTop = document.documentElement.scrollTop
