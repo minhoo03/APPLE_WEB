@@ -25,6 +25,8 @@
 
         if(y < window.innerHeight * 0.35) {
             siteP.classList.add('active')
+        } else {
+            siteP.classList.remove('active')
         }
     }
 
