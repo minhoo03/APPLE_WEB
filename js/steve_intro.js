@@ -37,7 +37,6 @@ $(() => {
         // ex : 0px => 0 - 500px => -500px으로 인식
 
         scrollPersent1 = scroll_test200 / scorll_realHeight1
-
     }
 
     function motion() {
@@ -70,9 +69,6 @@ $(() => {
                 'transform': `translateY(${moveVal1}px)`
             })
         }
-
-
-
 
         apple_intro.css({
             'transform': `scale(${zoomVal})`

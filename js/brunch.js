@@ -4,6 +4,10 @@
     const max_left = document.querySelector('.max_left')
     const site_macbook = document.querySelector('.site_macbook')
 
+    const phone_text1 = document.querySelector('.phone_text1')
+    const phone_text2 = document.querySelector('.phone_text2')
+    const phone_text3 = document.querySelector('.phone_text3')
+
     let scrollTop = 0
     let intro_img = document.getElementsByClassName('intro_img')[0]
     let intro_title = document.getElementsByClassName('intro_title')[0]
@@ -51,10 +55,44 @@
         }
     }
 
+    function showValue4() {
+        let y = phone_text1.getBoundingClientRect().top
+
+        if(y < window.innerHeight * 0.65) {
+            phone_text1.classList.add('active')
+        }else {
+            phone_text1.classList.remove('active')
+        }
+    }
+
+    function showValue5() {
+        let y = phone_text2.getBoundingClientRect().top
+
+        if(y < window.innerHeight * 0.65) {
+            phone_text2.classList.add('active')
+        }else {
+            phone_text2.classList.remove('active')
+        }
+    }
+
+    function showValue6() {
+        let y = phone_text3.getBoundingClientRect().top
+
+        if(y < window.innerHeight * 0.65) {
+            phone_text3.classList.add('active')
+        }else {
+            phone_text3.classList.remove('active')
+        }
+    }
+
     // 스크롤시 showValue 실행
     window.addEventListener('scroll', showValue, false)
     window.addEventListener('scroll', showValue2, false)
     window.addEventListener('scroll', showValue3, false)
+    window.addEventListener('scroll', showValue4, false)
+    window.addEventListener('scroll', showValue5, false)
+    window.addEventListener('scroll', showValue6, false)
+
     window.addEventListener('scroll', () => {
         scrollTop = document.documentElement.scrollTop
         console.log(scrollTop)

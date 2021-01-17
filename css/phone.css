@@ -1,22 +1,51 @@
 .site_phone {
     width: 100%;
-    height: 3000px;
+    height: 2500px;
     display: flex;
 }
 
+.phone_noSticky {
+    text-align: center;
+    background: #000;
+    color: #999;
+    width: 50%;
+    height: 100%;
+}
 .site_phone h2 {
-    font-size: 100px;
+    display: block;
+    font-size: 40px;
 }
 
 .phone_sticky {
+    overflow: hidden;
     width: 50%;
     background: #000;
     position: sticky;
     top: 0;
     height: 100vh;
+    padding: 15%;
 }
 
-.phone_title {
-    padding-top: 409px;
-    color: #ffffff;
+.phone_sticky h2 {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.phone_text1 {
+    transition: 0.5s ease;
+    margin-top: 550px;
+}
+.phone_text2 {
+    transition: 0.5s ease;
+    margin-top: 600px;
+}
+.phone_text3 {
+    transition: 0.5s ease;
+    margin-top: 650px;
+}
+
+.phone_text1.active,
+.phone_text2.active,
+.phone_text3.active {
+    color: #fff;
 }
