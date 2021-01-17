@@ -1,0 +1,44 @@
+.macbook_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site_macbook {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.macbook_contents {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.left_mac,
+.right_mac {
+    margin: 12px;
+}
+
+.left_mac,
+.right_mac {
+    width: auto;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.mac_intro {
+    padding: 40px;
+    font-size: 16px;
+    color: #353535;
+}
+
+.left_mac img,
+.right_mac video {
+    max-width: 100%;
+    max-height: 100%;
+}
