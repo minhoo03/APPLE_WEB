@@ -3,6 +3,14 @@
     height: auto;
 }
 
+.max_intro.active .max_left {
+    opacity: 1;
+}
+
+.max_intro.active .max_right {
+    opacity: 1;
+}
+
 .max_contents {
     max-width: 90%;
     margin: 0 auto;
@@ -11,6 +19,8 @@
 }
 
 .max_left {
+    transition: opacity 0.5s ease;
+    opacity: 0;
     overflow: hidden;
     max-width: 60%;
     height: auto;
@@ -22,6 +32,8 @@
 }
 
 .max_right {
+    transition: opacity 0.5s 0.3s ease;
+    opacity: 0;
     margin-left: 10%;
     width: 30%;
     display: flex;
