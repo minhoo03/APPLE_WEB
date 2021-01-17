@@ -5,9 +5,15 @@
 }
 
 .site_macbook {
+    transition: opacity 0.5s;
     width: 100%;
     height: auto;
     position: relative;
+    opacity: 0;
+}
+
+.site_macbook.active {
+    opacity: 1;
 }
 
 .macbook_contents {

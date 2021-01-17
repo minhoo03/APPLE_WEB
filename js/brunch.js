@@ -2,6 +2,7 @@
     const siteS = document.querySelector('.site_section')
     const siteP = document.querySelector('.site_product')
     const max_left = document.querySelector('.max_left')
+    const site_macbook = document.querySelector('.site_macbook')
 
     let scrollTop = 0
     let intro_img = document.getElementsByClassName('intro_img')[0]
@@ -37,6 +38,16 @@
             max_intro.classList.add('active')
         } else {
             max_intro.classList.remove('active')
+        }
+    }
+
+    function showValue3() {
+        let y = site_macbook.getBoundingClientRect().top
+
+        if(y < window.innerHeight * 0.65) {
+            site_macbook.classList.add('active')
+        } else {
+            site_macbook.classList.remove('active')
         }
     }
 
